@@ -1,0 +1,113 @@
+@use 'reset';
+@use 'mixins';
+@import 'variables';
+
+$formulasColors: (
+  tiersEss: #55a5ca,
+  tiersConf: #40aab3,
+  tousRis: $green,
+);
+
+.borderedBlock {
+  border-top: 10px solid #6e6e6e;
+  position: relative;
+
+  @each $formulaName, $color in $formulasColors {
+    &.#{$formulaName} {
+      border-color: $color;
+
+      .formulaPrice,
+      .formulaPeriod {
+        color: $color;
+      }
+
+      @include mixins.radioBtn($color);
+    }
+  }
+
+  .recommandation {
+    background-color: $green;
+    color: #fff;
+    width: 100%;
+    font-weight: 700;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    padding: 16px 0;
+  }
+}
+
+.formulas {
+  background-color: $gray;
+}
+
+.bordered {
+  border: 2px solid;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+
+  .col {
+    text-align: center;
+
+    &.formula {
+      background-color: #e8e8e8;
+      padding-top: 3em;
+
+      &.selected {
+        background-color: #fff;
+      }
+
+      .formulaTitle {
+        margin-bottom: 1em;
+      }
+
+      .formulaPrice {
+        font-weight: 700;
+        font-size: 2.2em;
+      }
+    }
+
+    strong {
+      &.red {
+        color: $red;
+      }
+    }
+  }
+}
+
+.paimentPlan {
+  border: 1px solid #e8e8e8;
+  padding: 31px 62px;
+  font-weight: 700;
+  margin-bottom: 2em;
+
+  input {
+    display: none;
+
+    +label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: #6e6e6e;
+      border-radius: $radiusSmall;
+      border: 1px solid #6e6e6e;
+      cursor: pointer;
+      height: 40px;
+      margin-top: 1em;
+      vertical-align: middle;
+    }
+
+    &:checked {
+      +label {
+        background-color: #fff;
+        color: #6e6e6e;
+      }
+    }
+  }
+}

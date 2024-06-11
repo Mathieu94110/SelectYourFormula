@@ -1,0 +1,303 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.green {
+  color: #3bc080;
+}
+
+.header {
+  background-color: #f5f5f5;
+  padding-top: 3em;
+}
+.header .devisNumber {
+  background-color: #fff;
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 2em;
+}
+.header .title {
+  margin-bottom: 0.5em;
+}
+
+.borderedBlock {
+  border-top: 10px solid #6e6e6e;
+  position: relative;
+}
+.borderedBlock.tiersEss {
+  border-color: #55a5ca;
+  background-color: #55a5ca;
+}
+.borderedBlock.tiersEss .formulaPrice,
+.borderedBlock.tiersEss .formulaPeriod {
+  color: #55a5ca;
+}
+.borderedBlock.tiersEss input {
+  display: none;
+}
+.borderedBlock.tiersEss input:checked + label:before {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.75256L4.8742 9.07127L12.9595 1.09827' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #2c6e8d;
+}
+.borderedBlock.tiersEss label {
+  position: relative;
+  cursor: pointer;
+  background-color: #55a5ca;
+  display: block;
+  margin: 1em auto;
+  font-weight: 500;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+  width: 90%;
+}
+.borderedBlock.tiersEss label:before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 40px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.borderedBlock.tiersConf {
+  border-color: #40aab3;
+  background-color: #40aab3;
+}
+.borderedBlock.tiersConf .formulaPrice,
+.borderedBlock.tiersConf .formulaPeriod {
+  color: #40aab3;
+}
+.borderedBlock.tiersConf input {
+  display: none;
+}
+.borderedBlock.tiersConf input:checked + label:before {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.75256L4.8742 9.07127L12.9595 1.09827' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #256368;
+}
+.borderedBlock.tiersConf label {
+  position: relative;
+  cursor: pointer;
+  background-color: #40aab3;
+  display: block;
+  margin: 1em auto;
+  font-weight: 500;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+  width: 90%;
+}
+.borderedBlock.tiersConf label:before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 40px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.borderedBlock.tousRis {
+  border-color: #3bc080;
+  background-color: #3bc080;
+}
+.borderedBlock.tousRis .formulaPrice,
+.borderedBlock.tousRis .formulaPeriod {
+  color: #3bc080;
+}
+.borderedBlock.tousRis input {
+  display: none;
+}
+.borderedBlock.tousRis input:checked + label:before {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.75256L4.8742 9.07127L12.9595 1.09827' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #23724c;
+}
+.borderedBlock.tousRis label {
+  position: relative;
+  cursor: pointer;
+  background-color: #3bc080;
+  display: block;
+  margin: 1em auto;
+  font-weight: 500;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 16px 0;
+  text-align: center;
+  width: 90%;
+}
+.borderedBlock.tousRis label:before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  border-radius: 40px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+}
+.borderedBlock .recommandation {
+  background-color: #3bc080;
+  color: #fff;
+  width: 100%;
+  font-weight: 700;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -50px;
+  padding: 16px 0;
+}
+
+.formulas {
+  background-color: #f5f5f5;
+}
+
+.bordered {
+  border: 2px solid;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+.grid .col {
+  text-align: center;
+}
+.grid .col.formula {
+  background-color: #e8e8e8;
+  padding-top: 3em;
+}
+.grid .col.formula.selected {
+  background-color: #fff;
+}
+.grid .col.formula .formulaTitle {
+  margin-bottom: 1em;
+}
+.grid .col.formula .formulaPrice {
+  font-weight: 700;
+  font-size: 2.2em;
+}
+.grid .col strong.red {
+  color: #E23D28;
+}
+
+.paimentPlan {
+  border: 1px solid #e8e8e8;
+  padding: 31px 62px;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+.paimentPlan input {
+  display: none;
+}
+.paimentPlan input + label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #6e6e6e;
+  border-radius: 3px;
+  border: 1px solid #6e6e6e;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 1em;
+  vertical-align: middle;
+}
+.paimentPlan input:checked + label {
+  background-color: #fff;
+  color: #6e6e6e;
+}
+
+.recap .priceBlock {
+  width: 45%;
+  min-width: 540px;
+  margin-top: 2em;
+  margin-left: auto;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+}
+.recap .priceBlock .info {
+  border-bottom: 2px solid #e6e6e6;
+  margin: 18px;
+  padding-bottom: 1em;
+}
+.recap .priceBlock .info p {
+  font-size: 14px;
+}
+.recap .priceBlock .info div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+.recap .priceBlock .info div .formula {
+  color: #40aab3;
+  position: relative;
+  font-size: 26px;
+}
+.recap .priceBlock .info div .price {
+  font-size: 24px;
+}
+.recap .priceBlock .small {
+  font-size: 0.8em;
+  display: inline-block;
+  vertical-align: super;
+}
+.recap .total {
+  background-color: #40aab3;
+  font-weight: 700;
+  color: #fff;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+.recap .total .price {
+  font-size: 58px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.recap .total .price .small {
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+}/*# sourceMappingURL=style.css.map */

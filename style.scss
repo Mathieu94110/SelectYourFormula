@@ -1,0 +1,12 @@
+@use 'sass/reset';
+@use 'sass/mixins';
+@use 'sass/header';
+@use 'sass/formulas';
+@use 'sass/recap';
+@import 'sass/variables';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+}

@@ -1,0 +1,41 @@
+@import 'variables';
+
+@mixin radioBtn($color) {
+  input {
+    display: none;
+
+    &:checked + label:before {
+      background-image: url("data:image/svg+xml,%3Csvg width='14' height='11' viewBox='0 0 14 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.75256L4.8742 9.07127L12.9595 1.09827' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: darken($color, 20%);
+    }
+  }
+  label {
+    position: relative;
+    cursor: pointer;
+    background-color: $color;
+    display: block;
+    margin: 1em auto;
+    font-weight: 500;
+    border-radius: $radiusSmall;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 16px 0;
+    text-align: center;
+    width: 90%;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 22px;
+      height: 22px;
+      border-radius: 40px;
+      background-color: #fff;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 30px;
+    }
+  }
+  background-color: $color;
+}

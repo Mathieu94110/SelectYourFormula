@@ -1,0 +1,70 @@
+@use 'reset';
+@use 'mixins';
+@import 'variables';
+
+.recap {
+  .priceBlock {
+    width: 45%;
+    min-width: 540px;
+    margin-top: 2em;
+    margin-left: auto;
+    background-color: $gray;
+    border-radius: $radiusSmall;
+
+    .info {
+      // height: 90px;
+      border-bottom: 2px solid #e6e6e6;
+      margin: 18px;
+      padding-bottom: 1em;
+      p {
+        font-size: 14px;
+      }
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 700;
+        padding-top: 1em;
+        margin-bottom: 1em;
+
+        .formula {
+          color: $aqua;
+          position: relative;
+          font-size: 26px;
+        }
+        .price {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .small {
+      font-size: 0.8em;
+      display: inline-block;
+      vertical-align: super;
+    }
+  }
+
+  .total {
+    background-color: $aqua;
+    font-weight: 700;
+    color: #fff;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+
+    .price {
+      font-size: 58px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+
+      .small {
+        font-size: 1rem;
+        margin-top: 8px;
+      }
+    }
+  }
+}

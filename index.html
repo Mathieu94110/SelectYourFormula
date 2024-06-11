@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'olivier Assurance | Devis</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <h1 class="title">Nous avons la formule qu'il vous faut</h1>
+      <div class="devisNumber">Devis n°123456789</div>
+      <p class="headerText">
+        Compte tenu de l’âge et de la valeur financière de votre véhicule,
+        nous vous recommandons la formule
+        <strong class="green">Tiers Premium</strong> à
+        <strong class="green">357€</strong> par an.
+      </p>
+    </div>
+  </div>
+  <section class="formulas">
+    <div class="container grid">
+      <div class="col">
+        <div class="borderedBlock paimentPlan">
+          <p>Voir mon tarif en</p>
+          <input type="radio" name="paimentPlan" value="ann" id="ann" checked /><label for="ann">Annuel</label>
+          <input type="radio" name="paimentPlan" value="men" id="men" /><label for="men">Mensuel</label>
+        </div>
+        Bénéficiez d'une <strong class="red">remise</strong> sur votre prix en
+        choississant le paiement annuel.
+      </div>
+      <div class="col borderedBlock formula  tiersEss">
+        <h3 class="formulaTitle">Tiers Essentiel</h3>
+        <div class="formulaPrice">257€</div>
+        <div class="formulaPeriod">par an</div>
+        <input type="radio" value="tiersEss" id="tiersEss" class="formulaSelect" name="formula" /><label
+          class="formulaBtn" for="tiersEss">choisir</label>
+      </div>
+      <div class="col borderedBlock formula tiersConf">
+        <h3 class="formulaTitle">Tiers Confort</h3>
+        <div class="formulaPrice">302€</div>
+        <div class="formulaPeriod">par an</div>
+        <input type="radio" value="tiersConf" id="tiersConf" class="formulaSelect" name="formula" /><label
+          class="formulaBtn" for="tiersConf">choisir</label>
+      </div>
+      <div class="col borderedBlock formula tousRis">
+        <span class="recommandation">Nous vons recommandons</span>
+        <h3 class="formulaTitle">Tous Risques</h3>
+        <div class="formulaPrice">357€</div>
+        <div class="formulaPeriod">par an</div>
+        <input type="radio" value="tousRis" id="tousRis" class="formulaSelect" name="formula" checked /><label
+          class="formulaBtn" for="tousRis">choisir</label>
+      </div>
+    </div>
+  </section>
+  <section class="recap">
+    <div class="container">
+      <h2>Récapitulatif de votre offre</h2>
+      <aside class="priceBlock">
+      </aside>
+    </div>
+  </section>
+</body>
+
+</html>
